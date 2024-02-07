@@ -11,47 +11,47 @@ public class Persona {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String nome;
-    private String cognome;
-    private int eta;
+    private String name;
+    private String surname;
+    private int age;
 
     public Persona(long id, String nome, String cognome,int eta){
         this.id = id;
-        this.nome = nome;
-        this.cognome = cognome;
-        this.eta = eta;
+        this.name = nome;
+        this.surname = cognome;
+        this.age = eta;
     }
 
     public Persona(){
         this.id =  0;
-        this.nome = "";
-        this.cognome = "";
-        this.eta = 0;
+        this.name = "";
+        this.surname = "";
+        this.age = 0;
     }
 
     public long getId() {
         return id;
     }
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
-    public String getCognome() {
-        return cognome;
+    public String getSurname() {
+        return surname;
     }
-    public int getEta() {
-        return eta;
+    public int getAge() {
+        return age;
     }
     public void setId(long id) {
         this.id = id;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String nome) {
+        this.name = nome;
     }
-    public void setCognome(String cognome) {
-        this.cognome = cognome;
+    public void setSurname(String cognome) {
+        this.surname = cognome;
     }
-    public void setEta(int eta) {
-        this.eta = eta;
+    public void setAge(int eta) {
+        this.age = eta;
     }
 
 }
